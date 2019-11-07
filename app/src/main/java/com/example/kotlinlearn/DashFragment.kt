@@ -11,7 +11,18 @@ class DashFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
+        val user = User("1111",1)
+
+        println(user.userName+"年龄"+user.userAge)
+
+        user.userTest = "我是测试"
+
+        println(user.userTest)
 
         return inflater!!.inflate(R.layout.fragment_dash, container, false)
+    }
+
+    fun updateUserInfo(user: User){
+
     }
 }
